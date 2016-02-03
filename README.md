@@ -1,4 +1,4 @@
-TO DO : 
+TODO : 
 
 change socal icons to green in normal state and then orange in hover state.
 
