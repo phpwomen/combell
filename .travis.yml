@@ -6,18 +6,12 @@ addons:
     packages:
     - sshpass
 after_success:
-- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "production" && mkdir
-  build
-- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "production" && mv
-  * build
-- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "production" && tar
-  -czf site.tgz build
-- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "production" && export
-  SSHPASS=$DEPLOY_PASS
-- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "production" && sshpass
-  -e scp site.tgz $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH
-- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "production" && sshpass
-  -e ssh $DEPLOY_USER@$DEPLOY_HOST $DEPLOY_PATH/deploy.sh
+- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "production" && mkdir build
+- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "production" && mv * build
+- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "production" && tar -czf site.tgz build
+- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "production" && export SSHPASS=$DEPLOY_PASS
+- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "production" && sshpass -e scp site.tgz $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH
+- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "production" && sshpass -e ssh $DEPLOY_USER@$DEPLOY_HOST $DEPLOY_PATH/deploy.sh
 env:
   global:
   - secure: W7+Evn4ghIa6ZIyDxRvOfftMBX5eXQAin1bgnHfdwqtmSTprOjG7+0sFlR0xt0w3L1DGJA1GUVBxNdLWblyjAgiFy0d7Vo5LGaqYPhxlAhS/AR7pVlxzjryM9IGVVLZG58C2zwdevpaTN35/R1zqXPGASr3x2jrIOUnLV1dSIkVN/8SSW3zJQMJS58KsKdWmUrmxbfpTI0O5NrqvnIYRj06SUTmZQm9iXwfXk+JwnVTdKOvzSDCePjO5sT6126loBrBIWKgBxl6r6/1NyWN0+l9MUgLWIFZpUiA/eQTzF6a4m2RFShAuWyvnheVO4zRVAgychXfoCmFG0X5ZkU5IABRlCuGPU6rhGR0XUQ+XzKNc+bOwE/wG2sfgVy+27bO6Vpw2aBmvgyx9pm4nc+jajD9gdxD3M+NTfiVZqQEdEHOjPyfaY6serIC95Pf9GJUAEYt7tDsquYI6faiXglnufz/JU3wFPfJlrrSsupohjIB5/+5ot97sxKBOmciS0Ylt4Y5YZOksa3Yq5mNQNODUepNNlApRQKA6jRwR/6A1Ww1neCJBZ44C88ZLgbT6GIRCLmrAjRawmO6txfu0fBK/y48QBu2EVz/rQ/6ZnkwPGGhuve72xx78nXSuDAOITuv3i8WgonGFLL4ZoAob+XJnrH3UxaVrO4TUxVvyD7SiOjE=
