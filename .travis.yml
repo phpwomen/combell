@@ -11,7 +11,7 @@ after_success:
 - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "production" && tar -czf site.tgz build
 - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "production" && du -h site.tgz
 - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "production" && export SSHPASS=$DEPLOY_PASS
-- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "production" && sshpass -e scp site.tgz $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH
+- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "production" && sshpass -e scp -o stricthostkeychecking=no site.tgz $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH
 - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "production" && sshpass -e ssh $DEPLOY_USER@$DEPLOY_HOST $DEPLOY_PATH/deploy.sh
 env:
   global:
