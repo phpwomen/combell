@@ -1,8 +1,26 @@
-# see http://about.travis-ci.org/docs/user/languages/php/ for more hints
 language: php
-
 php:
-  - 7.0
-
-#notifications:
-#  irc: "irc.freenode.org#phpwomen"
+- 7.0
+addons:
+  apt:
+    packages:
+    - sshpass
+after_success:
+- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "production" && . mkdir
+  build
+- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "production" && . mv
+  * build
+- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "production" && . tar
+  -czf site.tgz build
+- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "production" && . export
+  SSHPASS=$DEPLOY_PASS
+- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "production" && . sshpass
+  -e scp site.tgz $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH
+- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "production" && . sshpass
+  -e ssh $DEPLOY_USER@$DEPLOY_HOST $DEPLOY_PATH/deploy.sh
+env:
+  global:
+  - secure: W7+Evn4ghIa6ZIyDxRvOfftMBX5eXQAin1bgnHfdwqtmSTprOjG7+0sFlR0xt0w3L1DGJA1GUVBxNdLWblyjAgiFy0d7Vo5LGaqYPhxlAhS/AR7pVlxzjryM9IGVVLZG58C2zwdevpaTN35/R1zqXPGASr3x2jrIOUnLV1dSIkVN/8SSW3zJQMJS58KsKdWmUrmxbfpTI0O5NrqvnIYRj06SUTmZQm9iXwfXk+JwnVTdKOvzSDCePjO5sT6126loBrBIWKgBxl6r6/1NyWN0+l9MUgLWIFZpUiA/eQTzF6a4m2RFShAuWyvnheVO4zRVAgychXfoCmFG0X5ZkU5IABRlCuGPU6rhGR0XUQ+XzKNc+bOwE/wG2sfgVy+27bO6Vpw2aBmvgyx9pm4nc+jajD9gdxD3M+NTfiVZqQEdEHOjPyfaY6serIC95Pf9GJUAEYt7tDsquYI6faiXglnufz/JU3wFPfJlrrSsupohjIB5/+5ot97sxKBOmciS0Ylt4Y5YZOksa3Yq5mNQNODUepNNlApRQKA6jRwR/6A1Ww1neCJBZ44C88ZLgbT6GIRCLmrAjRawmO6txfu0fBK/y48QBu2EVz/rQ/6ZnkwPGGhuve72xx78nXSuDAOITuv3i8WgonGFLL4ZoAob+XJnrH3UxaVrO4TUxVvyD7SiOjE=
+  - secure: Q24nEJ0NtgFXvPIXQ9dckReCK9loo5s0q6V4h5V8JkG/CyBuvWKskWHWsx2rEkHcqAP7p4aMOobAGMo3RoRAdBGtDjtkRkwBwzoexeTvEmU+hxPUkyLH2BHxEcGrigFMEar/Z3mDRdDEq+4AON4i5wkgHzjzLL6hWZro0Ejab/Sz8g5qvzyEmfHDFeMSsNFiaEVBBPYM5Dxxa/mU273VNo2dYbWe3rWMGGhtZwDRXsIjLAJD5sjUY3v2sYnTtgJPv6bBlRQnD0JAiDPAXSfZHaEtWz9a1OsVBZinFksND7LzQfYVryFPSQV1hpThsp1Y90QaNGAihh+G6WSsMlefxJGHbL6Wn0I3RAdltIcEGWFQfhhVvK6mNx/Zl1nmd745FleT8XbPTXPwI3E2cJLtOtQ14y98sG6/SM1hB26giRCIVUPYO3MT7g0ZxbytaWxvFLxZic2XqhC2VUBhcL9y2555svLiA9g1Xy8FDNMIb6g+Lu1XSIdK/QKtI5PVapzMmPBlKk8c8DHMNYS6aByHYhUtmwMYIrAZWQM6bAFCG5Z5BxF8XU/8jyEyCbk6qgdysdt1qMMSM3mqtXARvQgYjdBko6lWVqdipLYYBw+po9BVRBLt9sK3upvwG5V9w1LDXLGAS51W4kIFSvJj+y+kMWZYaTUUnb4XxdTOLF+2HMc=
+  - secure: dnYYr1ZGLxZJLoEF2V1wR+zoc14THCShIChBtWZBMgUmNY0mACUZ06DyPexIJmFIA5/Bmb6qp6wgdG049cxj/AdIjbL6GkZ5x4Wis/4Yxc0vw2ZBt0xYl9V5/WJ/bf+ni0Y4Djcv31ruMLG9yjKqlYvNl70k1tXgvtPX3NlGbeQoiA9JFQeHq7le8kuudnR8V/3Gi7vDvjyi+J4v5KxjGwqOV6oPVNtXp3V8AW8pRP/MvMGTLSQnxVPKb3kdZZ4j8r+DiVSycbNCojQxoQKd3DG4xwvQPoWN8ZB/HxWffF/THvjv5iTDqJ6RzIYiRiWnIjnUwt4emwbBNfh4rDZL2V+fm9v3hIFp9LA6RxjCcdOW/4d+0TlahBvF84jJfG/o9YcCn9hPF8jfVXIjqbgUhcATPDDCx5zC0RokjKqXn9uBCvC5/ZI3tkJxBgDSUdB6AGtVC0GvqQ62RsTGFQJJqrkxfZTBVO5dqNrKSbpxIUuzWW+IMPNITJS6f0DQyGY/sRY23dp6B764Pt7mEWbgMJXtajtsUghBNYWoDKcm9bUwH64MRMbUQi076QxE/jqz3eRfQxU7CFmawM0r5yL1jIfxJkjeJN7cMByjERLlkAF/sz72N4CEvGZEiHZcBPmeuGn776Uma9BRq01vw6UpqA30r+EKIter0U/HUunhpIk=
+  - secure: KQgi4X+j3RlusLnFlmz1wa5TOXJbKSBGRwN1DdEAGJmGWwfhjpumFPnWfEQrvwSzVbHJSKJbBDQKJZ33VHBJIX7hKdCigueP8gbpyCoKDuXE2S45ULIYpxn5KzhXzJ9PlOEZMI0Hjqe2xlxYQe4aakfFU8spjk5+1zGPLBWOHK6V2MSroq41ZYqL/iO3TvnOaDfWldrcNaKHqpAVh4kqr6pe2H1zr8lKeSJNHmDRd8UI50Kom9GQLa+o45RjNHDM4Afov5Mz+MwiHpikNzwfiZpg+BTV1XXvD2HNiWipoiRrtCuXlsA65Q8LwA5VtBwVz4KnWIEV+aKM+A9QfyBHupRyaigFeNIREoKuTphDzycgtMS3Hbm/9m5yKLjAeO1slLd9GXDmdViQgK9y1M7zHnPdUd5TTxxhOBvIGN2zLV7maoGzSGvcwkkD6LI2l5lBeye5qFICDB7Ue52Wniz6Rq+6paMtRN74y9WyGvYo4nmkzhKMhuM+PMrhD0DUxc7NDe9gFdXpOTQTuvhXapyxrSYGV61wyWI1rXpmgE42YDra/iezDMjmJoMHcoJWx3AVTZWF+eUNxRjPNld4yNmDiZDdCKbxN+xaCkLAKzlu++A9MM+4fpfFvNSRKAmh5+q34wrbHGy4pntPlziT96MbCOW5rHbuP0omWzuxrW2h610=
