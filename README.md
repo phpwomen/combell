@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/phpwomen/combell.svg?branch=master)](https://github.com/phpwomen/combell)
+
 TODO : 
 
 change socal icons to green in normal state and then orange in hover state.
