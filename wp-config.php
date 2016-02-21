@@ -80,7 +80,7 @@ define( 'WPMU_PLUGIN_URL', WP_HOME . '/content/plugins-mu' );
 define( 'WP_ALLOW_MULTISITE', true );
 define( 'MULTISITE', true );
 define( 'SUBDOMAIN_INSTALL', true );
-define( 'DOMAIN_CURRENT_SITE', 'phpwomen.org' );
+define( 'DOMAIN_CURRENT_SITE', $_SERVER['HTTP_HOST'] );
 define( 'PATH_CURRENT_SITE', '/' );
 define( 'SITE_ID_CURRENT_SITE', 1 );
 define( 'BLOG_ID_CURRENT_SITE', 1 );
@@ -89,8 +89,7 @@ define( 'SUNRISE', 'on' );
 // Enable cache if not PW DEV and not already defined.
 if ( ! defined( 'PW_DEV' ) || ! PW_DEV ) {
 	if ( ! defined( 'WP_CACHE' ) ) {
-		define('WP_CACHE', true); //Added by WP-Cache Manager
-		define( 'WPCACHEHOME', '/data/sites/web/phpwomenorg/www/wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
+		define('WP_CACHE', true);
 	}
 }
 
