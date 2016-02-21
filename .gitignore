@@ -1,3 +1,7 @@
 autopull.php
-wp-config.php
-
+configs/
+wp-config-local.php
+.DS_Store
+/node_modules/
+.idea/
+/.sass-cache/
