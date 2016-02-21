@@ -22,7 +22,7 @@ $_SERVER['REQUEST_URI'] = ! empty( $_SERVER['REQUEST_URI'] ) ? $_SERVER['REQUEST
  * Don't edit this file directly, instead, create a local-config.php file and add your database
  * settings and defines in there. This file contains the production settings
  */
-	
+
 include( dirname( __FILE__ ) . '/wp-config-local.php' );
 
 
@@ -45,12 +45,12 @@ define( 'WPLANG', '' );
  */
 if ( defined( 'PW_DEV' ) && PW_DEV ) {
 
-	if ( ! defined( 'WP_DEBUG' ) ) 
+	if ( ! defined( 'WP_DEBUG' ) )
 		define( 'WP_DEBUG', true );
 
 	if ( ! defined( 'SAVEQUERIES' ) )
 		define( 'SAVEQUERIES', true );
-		
+
 	if ( ! defined( 'SCRIPT_DEBUG' ) )
 		define( 'SCRIPT_DEBUG', true );
 
@@ -62,7 +62,7 @@ if ( defined( 'PW_DEV' ) && PW_DEV ) {
 
 // Define Site URL: WordPress in a subdirectory.
 if ( ! defined( 'WP_SITEURL' ) )
-	define( 'WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] );
+	define( 'WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] . '/wordpress' );
 
 // Define Home URL
 if ( ! defined( 'WP_HOME' ) )
@@ -103,7 +103,7 @@ if ( ! defined( 'PW_DEV' ) || ( defined( 'PW_DEV' ) && ! PW_DEV ) ) {
 # Clean up image edits
 if ( ! defined( 'IMAGE_EDIT_OVERWRITE' ) )
 	define( 'IMAGE_EDIT_OVERWRITE', true );
- 
+
 # Enable all core updates, including minor and major
 if ( ! defined( 'WP_AUTO_UPDATE_CORE' ) )
 	define( 'WP_AUTO_UPDATE_CORE', true );
