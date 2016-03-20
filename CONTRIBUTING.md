@@ -12,6 +12,8 @@ These are just guidelines, not rules, use your best judgment and feel free to pr
   * [How the Site is Organized](#how-the-site-is-organized)
 [How Can I Contribute?](#how-can-i-contribute)
    * [Reporting Bugs](#reporting-bugs)
+   * [How To Submit Changes](#how-to-submit-changes)
+      * [Pull Requests](#pull-requests)
 
 ## What should I know before I get started?
 
@@ -47,13 +49,16 @@ Explain the problem and include additional details to help maintainers reproduce
 * **Explain which behavior you expected to see instead and why.**
 * **Include screenshots and animated GIFs** which show you following the described steps and clearly demonstrate the problem.  You can use [this tool](http://www.cockos.com/licecap/) to record GIFs on OSX and Windows, and [this tool](https://github.com/colinkeenan/silentcast) or [this tool](https://github.com/GNOME/byzanz) on Linux.
 
-### How People Should Work
+### How To Submit Changes
 
-New features should be added by creating a branch from master.  We prefer a naming scheme that uses the feature and issue number in the name, like `contributing-md-issue-20` or `contributing-20` or something similar.  
+New features and Bug Fixes should be added by creating a branch from master.  We prefer a naming scheme that uses the feature and/or issue number in the name, like `contributing-md-issue-20`, `contributing-20`, `issue-20`.
 
-When the feature is ready for review or requires feedback, a Pull Request should be created from the feature branch to `master`.  A pull request must be reviewed by someone who was not the author of the feature; otherwise it needs review by multiple reviewers.  As part of the review process, a reviewer should do more than look at the code changes.  They should pull the branch locally and run it on their machine to verify the code does not break another install.  This would not apply to page text changes.  
+#### Pull Requests
 
-When the feature is approved and merged, Travis CI will send the changes to the server for us. 
+* When the feature is ready for review or requires feedback, a Pull Request should be created from the feature branch to `master`.
+* A pull request must be reviewed by someone who was not the author of the feature; otherwise it needs review by multiple reviewers.  As part of the review process, a reviewer should do more than look at the code changes.  They should pull the branch locally and run it on their machine to verify the code does not break another install.  This would not apply to page text changes.
+
+When the feature is approved and the Pull Request is merged, Travis CI will send the changes to the server for us.
 
 
 
