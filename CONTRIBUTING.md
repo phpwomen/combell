@@ -11,6 +11,7 @@ These are just guidelines, not rules, use your best judgment and feel free to pr
   * [Code of Conduct](#code-of-conduct)
   * [How the Site is Organized](#how-the-site-is-organized)
 [How Can I Contribute?](#how-can-i-contribute)
+   * [Reporting Bugs](#reporting-bugs)
 
 ## What should I know before I get started?
 
@@ -26,7 +27,27 @@ We have two nearly identical websites [dev.phpwomen.org](http://dev.phpwomen.org
 
 On GitHub there are two protected branches, `master` which syncs to `dev.phpwomen.org` and `production` which syns with `phpwomen.org`.  This means that we can make changes to the site without affecting production, until we are ready to update the production web site.
 
-# How People Should Work
+## How Can I Contribute?
+
+### Reporting Bugs
+
+This section guides you through submitting a bug report for PHP Women. Following these guidelines helps maintainers and the community understand your report :pencil:, reproduce the behavior :computer: :computer:, and find related reports :mag_right:.
+
+Before creating bug reports, please check [this list](https://github.com/phpwomen/combell/issues) as it may have already been reported. When you are creating a bug report, please [include as many details as possible](#how-do-i-submit-a-good-bug-report). If you'd like, you can use [this template](#template-for-submitting-bug-reports) to structure the information.
+
+#### How Do I Submit A (Good) Bug Report?
+
+Bugs are tracked as [GitHub issues](https://guides.github.com/features/issues/). After you've made sure this bug hasn't been reported, create an issue and provide the following information.
+
+Explain the problem and include additional details to help maintainers reproduce the problem:
+
+* **Use a clear and descriptive title** for the issue to identify the problem.
+* **Describe the exact steps which reproduce the problem** in as many details as possible.
+* **Describe the behavior you observed after following the steps** and point out what exactly is the problem with that behavior.
+* **Explain which behavior you expected to see instead and why.**
+* **Include screenshots and animated GIFs** which show you following the described steps and clearly demonstrate the problem.  You can use [this tool](http://www.cockos.com/licecap/) to record GIFs on OSX and Windows, and [this tool](https://github.com/colinkeenan/silentcast) or [this tool](https://github.com/GNOME/byzanz) on Linux.
+
+### How People Should Work
 
 New features should be added by creating a branch from master.  We prefer a naming scheme that uses the feature and issue number in the name, like `contributing-md-issue-20` or `contributing-20` or something similar.  
 
