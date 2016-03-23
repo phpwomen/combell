@@ -77,7 +77,7 @@ define( 'WPMU_PLUGIN_DIR', dirname( __FILE__ ) . '/content/plugins-mu' );
 define( 'WPMU_PLUGIN_URL', WP_HOME . '/content/plugins-mu' );
 
 /* Multisite */
-define( 'WP_ALLOW_MULTISITE', true );
+/*define( 'WP_ALLOW_MULTISITE', true );
 define( 'MULTISITE', true );
 define( 'SUBDOMAIN_INSTALL', true );
 define( 'DOMAIN_CURRENT_SITE', $_SERVER['HTTP_HOST'] );
@@ -85,7 +85,7 @@ define( 'PATH_CURRENT_SITE', '/' );
 define( 'SITE_ID_CURRENT_SITE', 1 );
 define( 'BLOG_ID_CURRENT_SITE', 1 );
 define( 'SUNRISE', 'on' );
-
+*/
 // Enable cache if not PW DEV and not already defined.
 if ( ! defined( 'PW_DEV' ) || ! PW_DEV ) {
 	if ( ! defined( 'WP_CACHE' ) ) {
