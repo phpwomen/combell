@@ -1,8 +1,9 @@
-# Contributing to PHPWomen
+# Contributing to PHP Women website
 
 :+1::tada: First off, thanks for taking the time to contribute! :tada::+1:
 
-The following is a set of guidelines for contributing to PHP Women, which are hosted in the [PHP Women Organization](https://github.com/phpwomen/combell/) on GitHub.
+The following is a set of guidelines for contributing to [PHP Women website](https://github.com/phpwomen/combell/), which is hosted in the [PHP Women Organization](https://github.com/phpwomen/) on GitHub.
+
 These are just guidelines, not rules, use your best judgment and feel free to propose changes to this document in a pull request.
 
 #### Table Of Contents
@@ -34,7 +35,7 @@ On GitHub there are two protected branches, `master` which syncs to `dev.phpwome
 
 ### Reporting Bugs
 
-This section guides you through submitting a bug report for PHP Women. Following these guidelines helps maintainers and the community understand your report :pencil:, reproduce the behavior :computer: :computer:, and find related reports :mag_right:.
+This section guides you through submitting a bug report for PHP Women website. Following these guidelines helps maintainers and the community understand your report :pencil:, reproduce the behavior :computer: :computer:, and find related reports :mag_right:.
 
 Before creating bug reports, please check [this list](https://github.com/phpwomen/combell/issues) as it may have already been reported. When you are creating a bug report, please [include as many details as possible](#how-do-i-submit-a-good-bug-report). If you'd like, you can use [this template](#template-for-submitting-bug-reports) to structure the information.
 
