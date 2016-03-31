@@ -17,6 +17,7 @@ These are just guidelines, not rules, use your best judgment and feel free to pr
    * [How To Suggest Changes or Request New Features](#how-to-suggest-changes-or-request-new-features)
    * [How To Submit Changes](#how-to-submit-changes)
       * [Pull Requests](#pull-requests)
+      * [Style Guide](#style-guide)
 
 ## What should I know before I get started?
 
@@ -76,3 +77,7 @@ New features and Bug Fixes should be added by creating a branch from master.  We
 * A pull request must be reviewed by someone who was not the author of the feature; otherwise it needs review by multiple reviewers.  As part of the review process, a reviewer should do more than look at the code changes.  They should pull the branch locally and run it on their machine to verify the code does not break another install.  This would not apply to page text changes.
 
 When the feature is approved and the Pull Request is merged, Travis CI will send the changes to the server for us.
+
+#### Style Guide
+
+We follow the [Wordpress Style Guide](https://make.wordpress.org/core/handbook/best-practices/coding-standards/php/).  Please be certain that your submission follows these rules. Your IDE may let you apply the Wordpress style guide for the project.
