@@ -20,4 +20,4 @@ We are looking forward for anybody to help.
 
 First of all read [Contributing](Contributing.md) guidelines. (Don't forget to support Code Manifesto!)
 
-Then follow the instructions written in the [Install](Install.md) to quickly setup your local environment for contributing.
+Then follow the instructions written in the [Install](INSTALL.md) to quickly setup your local environment for contributing.
