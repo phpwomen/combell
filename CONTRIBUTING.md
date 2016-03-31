@@ -14,6 +14,7 @@ These are just guidelines, not rules, use your best judgment and feel free to pr
 
 [How Can I Contribute?](#how-can-i-contribute)
    * [Reporting Bugs](#reporting-bugs)
+   * [How To Suggest Changes or Request New Features](#how-to-suggest-changes-or-request-new-features)
    * [How To Submit Changes](#how-to-submit-changes)
       * [Pull Requests](#pull-requests)
 
@@ -50,6 +51,15 @@ Explain the problem and include additional details to help maintainers reproduce
 * **Describe the behavior you observed after following the steps** and point out what exactly is the problem with that behavior.
 * **Explain which behavior you expected to see instead and why.**
 * **Include screenshots and animated GIFs** which show you following the described steps and clearly demonstrate the problem.  You can use [this tool](http://www.cockos.com/licecap/) to record GIFs on OSX and Windows, and [this tool](https://github.com/colinkeenan/silentcast) or [this tool](https://github.com/GNOME/byzanz) on Linux.
+
+### How to Suggest Changes or Request New Features
+
+We warmly welcome contributions.
+
+If you have an idea for something new for the website, please create [an issue](https://github.com/phpwomen/combell/issues).  In the title of the issue please start the title with `Suggestion: `.  A contributor will comment to ask you clarifying questions and to assist you with getting the feature implemented.
+
+Requests specific to the business of the PHP Women organization should be directed to [hello@phpwomen](mailto:hello@phpwomen.org).
+
 
 ### How To Submit Changes
 
