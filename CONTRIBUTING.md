@@ -56,14 +56,19 @@ Explain the problem and include additional details to help maintainers reproduce
 
 We warmly welcome contributions.
 
-If you have an idea for something new for the website, please create [an issue](https://github.com/phpwomen/combell/issues).  In the title of the issue please start the title with `Suggestion: ` followed by a descriptive title.  A contributor will comment to ask you clarifying questions and to assist you with getting the feature implemented.
+If you have an idea for something new for the website, please create [an issue](https://github.com/phpwomen/combell/issues).  Give the issue a descriptive title that tells the problem you want to solve.  Please use a label to tag your suggestion as `enhancement` or `question`.  A contributor will comment to ask you clarifying questions and to assist you with getting the feature ready to be implemented.  If you would like to make the contribution, you will be able to do that.
 
-Requests specific to the business of the PHP Women organization should be directed to [hello@phpwomen](mailto:hello@phpwomen.org).
+Requests specific to the business of the PHP Women organization should be directed to [hello@phpwomen.org](mailto:hello@phpwomen.org).
 
 
 ### How To Submit Changes
 
-New features and Bug Fixes should be added by creating a branch from master.  We prefer a naming scheme that uses the feature and/or issue number in the name, like `contributing-md-issue-20`, `contributing-20`, `issue-20`.
+We are so excited to have your help!
+
+Issues tagged with the label `Help Wanted` that aren't assigned to anyone, are available to be worked on. If an issue has gone quiet, we welcome you to comment and wake it up.
+
+New features and Bug Fixes should be added by creating a branch from master.  We prefer naming branches by using the feature and/or issue number in the name, like `contributing-md-issue-20`, `contributing-20`, `issue-20`.
+
 
 #### Pull Requests
 
@@ -71,6 +76,3 @@ New features and Bug Fixes should be added by creating a branch from master.  We
 * A pull request must be reviewed by someone who was not the author of the feature; otherwise it needs review by multiple reviewers.  As part of the review process, a reviewer should do more than look at the code changes.  They should pull the branch locally and run it on their machine to verify the code does not break another install.  This would not apply to page text changes.
 
 When the feature is approved and the Pull Request is merged, Travis CI will send the changes to the server for us.
-
-
-
