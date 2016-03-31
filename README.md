@@ -1,15 +1,23 @@
 [![Build Status](https://travis-ci.org/phpwomen/combell.svg?branch=master)](https://github.com/phpwomen/combell)
 
-TODO : 
+# PHPWOMEN website project
 
-change socal icons to green in normal state and then orange in hover state.
+PHPWomen is currently remaking its [website](http://phpwomen.org) and this is the codebase of the future [website](http://dev.phpwomen.org).
 
-form needs actually linking to somewhere
+What you see in [dev.phpwomen.org](http://dev.phpwomen.org) is what you see in the _master_ branch of this repository.
 
-form inputs on focus state need to  border orange.
+## How to contribute to this project
 
-Supporting you in your code adventures. needs context : chat ( irc), google groups and social media.
+### Get in touch
 
-
+Before being developers we are a community so we warmly encourage you to get in touch with us. 
 
 [![Join the chat at https://gitter.im/phpwomen/combell](https://badges.gitter.im/phpwomen/combell.svg)](https://gitter.im/phpwomen/combell?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+### Setup your environment
+
+We are looking forward for anybody to help.
+
+First of all read [Contributing](Contributing.md) guidelines. (Don't forget to support Code Manifesto!)
+
+Then follow the instructions written in the [Install](INSTALL.md) to quickly setup your local environment for contributing.
