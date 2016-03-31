@@ -9,6 +9,8 @@ size, disability, ethnicity, gender identity and expression, level of experience
 nationality, personal appearance, race, religion, or sexual identity and
 orientation.
 
+For these reasons we require each contributor to be also a public subscriber of [Code Manifesto](http://codemanifesto.com/support)
+
 ## Our Standards
 
 Examples of behavior that contributes to creating a positive environment
