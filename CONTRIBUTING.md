@@ -24,7 +24,7 @@ These are just guidelines, not rules, use your best judgment and feel free to pr
 
 This project adheres to the Contributor Covenant [code of conduct](CODE_OF_CONDUCT.md).
 By participating, you are expected to uphold this code.
-Please report unacceptable behavior to [hello@phpwomen](mailto:hello@phpwomen.org).
+Please report unacceptable behavior to [hello@phpwomen.org](mailto:hello@phpwomen.org).
 
 ### How the Site is Organized
 
