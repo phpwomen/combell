@@ -56,7 +56,7 @@ Explain the problem and include additional details to help maintainers reproduce
 
 We warmly welcome contributions.
 
-If you have an idea for something new for the website, please create [an issue](https://github.com/phpwomen/combell/issues).  In the title of the issue please start the title with `Suggestion: `.  A contributor will comment to ask you clarifying questions and to assist you with getting the feature implemented.
+If you have an idea for something new for the website, please create [an issue](https://github.com/phpwomen/combell/issues).  In the title of the issue please start the title with `Suggestion: ` followed by a descriptive title.  A contributor will comment to ask you clarifying questions and to assist you with getting the feature implemented.
 
 Requests specific to the business of the PHP Women organization should be directed to [hello@phpwomen](mailto:hello@phpwomen.org).
 
