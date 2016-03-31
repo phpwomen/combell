@@ -42,7 +42,7 @@ Before creating bug reports, please check [this list](https://github.com/phpwome
 
 #### How Do I Submit A (Good) Bug Report?
 
-Bugs are tracked as [GitHub issues](https://guides.github.com/features/issues/). After you've made sure this bug hasn't been reported, create an issue and provide the following information.
+Website bugs must be reported in the Issues section of this project, here on Github. Bugs are tracked as [GitHub issues](https://guides.github.com/features/issues/). After you've made sure this bug hasn't been reported, create an issue and provide the following information.
 
 Explain the problem and include additional details to help maintainers reproduce the problem:
 
