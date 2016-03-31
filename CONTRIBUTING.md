@@ -30,7 +30,7 @@ Please report unacceptable behavior to [hello@phpwomen](mailto:hello@phpwomen.or
 
 We have two nearly identical websites [dev.phpwomen.org](http://dev.phpwomen.org) and [phpwomen.org](http://phpwomen.org).
 
-On GitHub there are two protected branches, `master` which syncs to `dev.phpwomen.org` and `production` which syns with `phpwomen.org`.  This means that we can make changes to the site without affecting production, until we are ready to update the production web site.
+On GitHub there are two protected branches, `master` which syncs to `dev.phpwomen.org` and `production` which syncs with `phpwomen.org`.  This means that we can make changes to the site without affecting production, until we are ready to update the production web site.
 
 ## How Can I Contribute?
 
