@@ -5,3 +5,4 @@ wp-config-local.php
 /node_modules/
 .idea/
 /.sass-cache/
+/content/db.php
