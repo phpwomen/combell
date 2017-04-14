@@ -4,3 +4,6 @@
 [submodule "wordpress-github-sync"]
 	path = content/plugins/wordpress-github-sync
 	url = git@github.com:mAAdhaTTah/wordpress-github-sync.git
+[submodule "content/plugins/jetpack"]
+	path = content/plugins/jetpack
+	url = git@github.com:Automattic/jetpack.git
