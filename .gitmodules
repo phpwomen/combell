@@ -2,5 +2,5 @@
 	path = wordpress
 	url = https://github.com/WordPress/WordPress.git
 [submodule "wordpress-github-sync"]
-	path = wordpress-github-sync
+	path = content/plugins/wordpress-github-sync
 	url = git@github.com:mAAdhaTTah/wordpress-github-sync.git
