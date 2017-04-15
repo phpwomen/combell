@@ -72,9 +72,18 @@ if ( ! defined( 'WP_HOME' ) )
 define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/content' );
 define( 'WP_CONTENT_URL', WP_HOME . '/content' );
 
+// Define path & url for Uploads
+define( 'UPLOADS', 'content/uploads' );
+
+// Define path & url for Plugins
+define( 'WP_PLUGIN_DIR', dirname(__FILE__) . '/content/plugins' );
+define( 'WP_PLUGIN_URL',  WP_HOME . '/content/plugins' );
+
 // Set path to MU Plugins.
 define( 'WPMU_PLUGIN_DIR', dirname( __FILE__ ) . '/content/plugins-mu' );
 define( 'WPMU_PLUGIN_URL', WP_HOME . '/content/plugins-mu' );
+
+
 
 /* Multisite */
 /*define( 'WP_ALLOW_MULTISITE', true );
